@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: my-app-service
   labels:
-    app: Myapp
+    app: nginx
 spec:
   selector:
     app: Myapp
@@ -12,4 +12,4 @@ spec:
     - name: http
       protocol: TCP
       port: 80
-      targetPort: 9388
+      targetPort: 80
